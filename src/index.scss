@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  margin: 0;
+  background-image: linear-gradient(135deg, #17aab9 10%, #5b43e9 90%);
+  height: 100vh;
+}
+* {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Poppins, sans-serif;
+}
+.app {
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+    width: 80%;
+
+    .input {
+      display: inline;
+      font-size: 1.1rem;
+      height: 40px;
+      padding: 0 10px;
+      width: 100%;
+      border: none;
+      border-radius: 10px 0 0 10px;
+    }
+    button {
+      height: 40px;
+      width: 40px;
+      font-size: 1.7rem;
+      border: none;
+      border-radius: 0 10px 10px 0;
+      background-color: #fff;
+      display: grid;
+      place-content: center;
+    }
+  }
+  .container {
+    padding: 5% 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    .current-weather {
+      width: 350px;
+      backdrop-filter: blur(17px) saturate(200%);
+      -webkit-backdrop-filter: blur(17px) saturate(200%);
+      background-color: rgba(17, 25, 40, 0.19);
+      box-shadow: 0px 0px 5px white;
+      padding: 35px;
+      border-radius: 8px;
+
+      * {
+        text-align: center;
+        color: white;
+      }
+      img {
+        margin: auto;
+        display: block;
+      }
+      h1 {
+        margin: 10px auto;
+      }
+    }
+    .forecast-weather {
+      padding: 25px;
+      border-radius: 8px;
+      backdrop-filter: blur(17px) saturate(200%);
+      -webkit-backdrop-filter: blur(17px) saturate(200%);
+      background-color: rgba(17, 25, 40, 0.19);
+      box-shadow: 0px 0px 5px white;
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+
+      .future-time {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 350px;
+
+        .box {
+          padding: 10px;
+          background-color: white;
+          border-radius: 8px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .current-all-details {
+        border-radius: 8px;
+        background-color: white;
+        padding: 10px 20px;
+        width: 100%;
+
+        .box {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          h3 {
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+  }
+  .search {
+    padding: 15%;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+@media (max-width: 720px) {
+  .app {
+    h1 {
+      font-size: 2.4rem;
+    }
+    .container {
+      flex-direction: column;
+    }
+  }
+}
