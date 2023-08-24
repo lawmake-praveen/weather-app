@@ -12,7 +12,7 @@ function App() {
   const [day3, setDay3] = useState([]);
 
   const key = `a56b5f2a0ee04236808134255231906`;
-  const BASE_URL = `http://api.weatherapi.com/v1`;
+  const BASE_URL = `https://api.weatherapi.com/v1`;
   const week = [
     "Sunday",
     "Monday",
