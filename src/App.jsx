@@ -64,7 +64,6 @@ function App() {
         setDay2([d2.day.condition.icon, Math.round((d2.day.mintemp_c + d2.day.maxtemp_c) / 2)]);
         setDay3([d3.day.condition.icon, Math.round((d3.day.mintemp_c + d3.day.maxtemp_c) / 2)]);
       } catch (error) {
-        console.log(error);
         alert("No Matching City Found");
       }
     } else {
