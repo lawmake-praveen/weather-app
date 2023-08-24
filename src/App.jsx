@@ -75,7 +75,7 @@ function App() {
   return (
     <>
       <main className="app">
-        <h1>Weather Status</h1>
+        <h1 className="heading">Weather Status</h1>
         <form onSubmit={calculate}>
           <input
             type="text"
